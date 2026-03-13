@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <!-- <img src="pic.jpg" class="logo"> -->
+         <h1><span style="color: #ff004f;font-size: 30px;">I</span>NDU</h1>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portofolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+    <p>CSE Student</p>
+    <h1> Hi, I'm <span>Indu</span> <br> from India,Andra Pradesh</h1>
+</div></div></div>
+
+<!-- ---------------about--------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pic2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" style="margin-bottom: 20px;">About Me</h1>
+                <p>I am a passionate Computer Science student with an interest in
+                    Web Development and Data Analysis. I enjoy building interactive
+                    web applications and working with datasets to discover insights.
+                    I am currently improving my skills in JavaScript, Python, SQL,
+                    and Data Visualization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Python ,C,SQL,</li>
+                            <li><span>Libraries</span><br>numpy,pandas,matplotlib</li>
+                            <li><span>Web development</span><br>HTML,CSS,JavaScript,BottStrap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2022</span><br>10th ssc with 93.3%</li>
+                            <li><span>2022-2024</span><br>12th puc with 92.2%</li>
+                            <li><span>2024-pursuing</span><br>B.Tech CSE 93.1%</li>
+                        </ul>
+                    </div><div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li>Learning new Things</li>
+                            <li>Listening Music</li>
+                            <li>Dancing</li>
+                            <li>fasion designing</li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Spotify-Clone</h2>
+                <p>Built a Spotify UI clone using HTML and CSS.
+                    Designed responsive music player interface.</p>
+                 <a href="project1.html" class="btn">View</a>
+            </div>
+            <div>   
+                <i class="fa-solid fa-gamepad"></i>
+                 <h2>Simon-game</h2>
+                <p>Created a memory game using JavaScript.
+
+                    Implemented game logic using event handling.</p>
+                 <a href="simon.html" class="btn">View</a>  
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Water-potability-Analysis</h2>
+                <p>Analyzed water quality dataset using Python.
+
+                    Created visualizations like bar plots, histograms, and box plots.</p>
+                <a href="/home/user/Dataset.ipynb" class="btn">View</a>   
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>indubairi6@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>7674014430</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/indu-bairi-ab6549325"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com//indu-bairi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
